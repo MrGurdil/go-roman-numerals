@@ -12,13 +12,19 @@ import (
 // TestConvert_1_I Given a parameter of 1 roman.Convert() returns "I"
 func TestConvert_1_I(t *testing.T) {
 
-	var convertedNumber1 = roman.Convert(1)
-	assert.Equal(t, "I", convertedNumber1, "1 = I")
+	var convertedNumber = roman.Convert(1)
+	assert.Equal(t, "I", convertedNumber, "1 = I")
 }
 
 // TestConvert_2_II Given a parameter of 2, roman.Convert() returns "II"
 func TestConvert_2_II(t *testing.T) {
 
-	var convertedNumber2 = roman.Convert(2)
-	assert.Equal(t, "II", convertedNumber2, "2 = II")
+	var convertedNumber = roman.Convert(2)
+	assert.Equal(t, "II", convertedNumber, "2 = II")
+}
+
+func TestConvert_3_III(t *testing.T) {
+
+	var convertedNumber = roman.Convert(3)
+	assert.Equal(t, "III", convertedNumber, "3 = III")
 }
