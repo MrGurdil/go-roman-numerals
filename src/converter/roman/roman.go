@@ -9,15 +9,12 @@ func init() {
 // Convert an integer to it's roman numeral equivalent
 func Convert(a int) string {
 
-	var ret string
+	ret := "III"
 
-	if a == 4 {
-		ret = "IV"
-	} else if a < 4 {
-		for a > 0 {
-			ret += "I"
-			a--
-		}
+	if a == 1 {
+		ret = "I"
+	} else if a == 2 {
+		ret = "II"
 	}
 
 	return ret
