@@ -28,3 +28,9 @@ func TestConvert_3_III(t *testing.T) {
 	var convertedNumber = roman.Convert(3)
 	assert.Equal(t, "III", convertedNumber, "3 = III")
 }
+
+func TestConvert_4_IV(t *testing.T) {
+
+	var convertedNumber = roman.Convert(4)
+	assert.Equal(t, "IV", convertedNumber, "4 = IV")
+}
